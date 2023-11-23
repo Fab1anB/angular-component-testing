@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { PersonComponent } from './person/person.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    BrowserModule,
+    PersonComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
